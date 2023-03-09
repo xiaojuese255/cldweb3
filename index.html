@@ -12,9 +12,21 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/cldweb2.json", {onProgress: UnityProgress});
     </script>
   </head>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      div{
+          width:100%;
+          height: 100%;
+          background: black;
+          position: absolute;
+      }
+  </style>
   <body>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 600px; height: 1060px"></div>
+      <div id="gameContainer" ></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
